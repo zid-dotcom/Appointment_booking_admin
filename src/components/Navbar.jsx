@@ -19,10 +19,29 @@ function Navbar() {
     atoken && localStorage.removeItem('aToken')
       ||
       dtoken && setdtoken('')
-    dtoken && localStorage.removeItem('dToken')
+    dtoken && localStorage.removeItem('dtoken')
 
 
   }
+
+
+
+//   const handleLogout = () => {
+//   // Admin logout
+//   if (atoken) {
+//     setAtoken('')
+//     localStorage.removeItem('aToken')
+//   }
+
+//   // Doctor logout
+//   if (dtoken) {
+//     setdtoken('')
+//     localStorage.removeItem('dToken')
+//   }
+
+//   navigate('/')
+// }
+
   return (
     <div className='flex justify-between items-center  border-b border-white shadow-2xs p-5 bg-white'>
       <div className='text-xl text-blue-500 font-semibold flex gap-2 '>
